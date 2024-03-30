@@ -1,0 +1,12 @@
+{
+    "name": "Python and Jupyter Notebook Development",
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+
+    "forwardPorts": [],
+    "postCreateCommand": "poetry install --without dev",
+    "remoteUser": "root"
+}
+
